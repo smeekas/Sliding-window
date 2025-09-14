@@ -23,6 +23,10 @@ class Solution {
                 // so all other string bigger then current substring (containing current string
                 // as substring) will also be in ans.
                 char ith = s.charAt(i);
+
+                // we have proceed all substrings start from i.
+                // now we need to move further so we move left pointer and minimize the
+                // substring length
                 if (hm.containsKey(ith)) {
                     // process ith character and try to minimize the substring from left
                     int ss = hm.get(ith);
